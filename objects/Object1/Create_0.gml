@@ -1,6 +1,6 @@
-move_speed = 3;
+move_speed = 2;
 
-tilemap = layer_tilemap_get_id("Tiles_Col")
+tilemap = layer_tilemap_get_id("Tiles_Col");
 
 hp = 12;
 maxhp = 12;
