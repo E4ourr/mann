@@ -82,10 +82,3 @@ if (leveling_up)
 
     exit;
 }
-
-if (global.paused) exit;
-
-if (keyboard_check_pressed(ord("esc"))
-{
-	global.paused = true;
-}
