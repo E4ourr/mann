@@ -1,3 +1,3 @@
 move_speed = 1;
 
-hp = 7;
+hp = 3;
