@@ -20,3 +20,7 @@ if (place_meeting(x, y, Object1))
 	hitplayer = true;
 } else hitplayer = false;
 
+if (hp <= 0)
+{
+    instance_destroy();
+}
