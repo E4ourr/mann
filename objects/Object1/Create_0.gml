@@ -5,5 +5,8 @@ tilemap = layer_tilemap_get_id("Tiles_Col");
 hp = 12;
 maxhp = 12;
 
+canMove = true;
+turn = 0;
+
 fire_cooldown = 0;
 fire_delay = 15;
