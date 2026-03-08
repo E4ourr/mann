@@ -1,12 +1,27 @@
 move_speed = 2;
 
+
 tilemap = layer_tilemap_get_id("Tiles_Col");
 
-hp = 12;
+
+
 maxhp = 12;
+hp = maxhp;
 
 canMove = true;
 turn = 0;
 
 fire_cooldown = 0;
 fire_delay = 15;
+
+level = 1;
+xp = 0;
+xp_to_next = 5;
+leveling_up = false;
+
+weapon_level = 1;
+speed_level = 1;
+hp_level = 1;
+
+move_speed = 1;
+damage = 1;
