@@ -1,4 +1,3 @@
-// Inherit the parent event
 event_inherited();
 
 if (instance_exists(Object5))

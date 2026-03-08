@@ -1,3 +1,3 @@
 event_inherited();
 
-room_goto(mainmenu);
+room_goto(Room4);
