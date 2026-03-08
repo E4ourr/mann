@@ -13,3 +13,19 @@ for (var i = 1; i <= _heartstotal; i ++)
 	
 }
 
+draw_set_halign(fa_right);
+draw_set_valign(fa_top);
+
+var _margin = 10;
+draw_text(display_get_gui_width() - _margin, _margin, "Level: " + string(level));
+if (leveling_up)
+{
+    var cx = display_get_gui_width()/2
+    draw_set_color(c_white);
+    draw_set_halign(fa_center)
+
+    draw_text(cx,200,"LEVEL UP")
+    draw_text(cx,250,"1 - Weapon (Lv " + string(weapon_level) + ")")
+    draw_text(cx,300,"2 - Speed (Lv " + string(speed_level) + ")")
+    draw_text(cx,350,"3 - HP (Lv " + string(hp_level) + ")")
+}

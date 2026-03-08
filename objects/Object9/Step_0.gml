@@ -1,3 +1,4 @@
+if (Object1.leveling_up) exit
 if (instance_exists(Object1))
 {
     var dir = point_direction(x, y, Object1.x, Object1.y);
@@ -24,3 +25,4 @@ if (hp <= 0)
 {
     instance_destroy();
 }
+

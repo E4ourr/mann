@@ -1,3 +1,2 @@
-other.hp -= 1;   
+other.hp -= damage;
 instance_destroy();  
-audio_play_sound(snd_enemyhit, 0, false);

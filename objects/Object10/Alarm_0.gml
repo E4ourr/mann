@@ -12,14 +12,16 @@ if (instance_exists(player))
     var spawn_y = player.y + lengthdir_y(dist, angle);
 
  instance_create_layer(spawn_x, spawn_y, "Instances", Object8);
- } }
+}  
+}
 }
 
 difficulty_timer += 1;
 
-if (difficulty_timer mod 1 == 0)
+if (difficulty_timer mod 3 == 0)
 {
     spawn_amount += 3;
-	move_speed += 10;
+    damage_multiplier += 0.2;
+    speed_multiplier += 0.1;
 }
 alarm[0] = spawn_delay;
