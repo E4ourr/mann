@@ -25,3 +25,5 @@ hp_level = 1;
 
 move_speed = 1;
 damage = 1;
+
+global.paused = false;
