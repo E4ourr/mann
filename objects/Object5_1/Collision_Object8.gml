@@ -1,1 +1,1 @@
-other.hp
+other.hp -= 4;
