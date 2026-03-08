@@ -8,17 +8,20 @@ move_wrap(true, true, 0);
 
 if mouse_check_button_pressed(mb_left)
 {
-	var b = instance_create_layer(x, y, "Instances", Object5_1);
+var b = instance_create_layer(x, y, "Instances", Object5_1);
+b.direction = image_angle;
 b.damage = damage;
 b.image_xscale = 1 + (weapon_level * 0.2);
 b.image_yscale = 1 + (weapon_level * 0.2);
-	for (var i = 0; i < weapon_level - 1; i++)
+var extra_bullets = clamp(weapon_level - 1, 0, 2)
+for (var i = 0; i < extra_bullets; i++)
+	
 {
 		var extra = instance_create_layer(x, y, "Instances", Object5_1);
 		extra.damage = damage;
 		extra.image_xscale = 1 + (weapon_level * 0.2);
 		extra.image_yscale = 1 + (weapon_level * 0.2);
-		extra.direction = irandom(359);
+		extra.direction = image_angle + random_range(-25, 25);
 }
 	audio_play_sound(snd_gunshot, 0, false);
 }
@@ -27,19 +30,6 @@ if (hp <= 0)
 {
     room_goto(Room3);
 }
-
-if (fire_cooldown > 0)
-{
-    fire_cooldown -= 1;
-}
-
-if (keyboard_check(vk_space) && fire_cooldown <= 0)
-{
-    instance_create_layer(x, y, "Instances", Object5_1);
-    fire_cooldown = fire_delay;
-	
-}
-
 if (keyboard_check(ord("W"))) 
 { 
 	vspeed = -speed; image_angle = 90;
@@ -69,7 +59,6 @@ if (leveling_up)
 {
     if (keyboard_check_pressed(ord("1"))) weapon_level += 1
 	 damage += 1
-    fire_delay -= 1
 
     if (keyboard_check_pressed(ord("2")))
 {
