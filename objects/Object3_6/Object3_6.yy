@@ -7,7 +7,7 @@
   "managed":true,
   "name":"Object3_6",
   "overriddenProperties":[
-    {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"Obj_dont_touch","path":"objects/Obj_dont_touch/Obj_dont_touch.yy",},"propertyId":{"name":"button_text","path":"objects/Obj_dont_touch/Obj_dont_touch.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"Map",},
+    {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"Obj_dont_touch","path":"objects/Obj_dont_touch/Obj_dont_touch.yy",},"propertyId":{"name":"button_text","path":"objects/Obj_dont_touch/Obj_dont_touch.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"Dessert",},
   ],
   "parent":{
     "name":"Objects",

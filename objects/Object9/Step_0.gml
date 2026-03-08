@@ -18,11 +18,18 @@ with(Object1)
 hp -= other.damage;
 }
 }
-hitplayer = true;
-} else hitplayer = false;
+    hitplayer = true;
+} 
+else hitplayer = false;
 
-if (hp <= 0)
+  if (hp <= 0)
 {
+    with (Object1)
+{
+    _score += 1;
+    }
+
     instance_destroy();
 }
+
 

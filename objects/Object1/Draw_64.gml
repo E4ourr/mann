@@ -29,3 +29,6 @@ if (leveling_up)
     draw_text(cx,300,"2 - Speed (Lv " + string(speed_level) + ")")
     draw_text(cx,350,"3 - HP (Lv " + string(hp_level) + ")")
 }
+
+var txt = "Knock Outs: " + string(_score);
+draw_text(display_get_gui_width() - _margin, _margin + 30, txt);
