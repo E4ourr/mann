@@ -2,7 +2,7 @@ spawn_amount =3;
 spawn_delay = 900;
 difficulty_timer = 0;
 
-max_enemies = 30;
+max_enemies = 100;
 
 spawn_distance_min = 350;
 spawn_distance_max = 350

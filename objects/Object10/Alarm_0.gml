@@ -11,17 +11,21 @@ if (instance_exists(player))
     var spawn_x = player.x + lengthdir_x(dist, angle);
     var spawn_y = player.y + lengthdir_y(dist, angle);
 
- instance_create_layer(spawn_x, spawn_y, "Instances", Object8);
+var enemy = instance_create_layer(spawn_x, spawn_y, "Instances", Object8);
+
+enemy.hp *= (1 + difficulty_timer * 0.20);
+enemy.image_xscale *= (1 + difficulty_timer * 0.03);
+enemy.image_yscale *= (1 + difficulty_timer * 0.03);
 }  
 }
 }
 
 difficulty_timer += 1;
 
-if (difficulty_timer mod 3 == 0)
+if (difficulty_timer mod 2 == 0)
 {
     spawn_amount += 3;
     damage_multiplier += 0.2;
-    speed_multiplier += 0.1;
+    speed_multiplier += 0.05;
 }
 alarm[0] = spawn_delay;

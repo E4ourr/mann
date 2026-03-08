@@ -3,7 +3,7 @@ move_speed = 2;
 
 tilemap = layer_tilemap_get_id("Tiles_Col");
 
-
+_score = 0;
 
 maxhp = 12;
 hp = maxhp;

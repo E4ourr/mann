@@ -12,6 +12,14 @@ if mouse_check_button_pressed(mb_left)
 b.damage = damage;
 b.image_xscale = 1 + (weapon_level * 0.2);
 b.image_yscale = 1 + (weapon_level * 0.2);
+	for (var i = 0; i < weapon_level - 1; i++)
+{
+		var extra = instance_create_layer(x, y, "Instances", Object5_1);
+		extra.damage = damage;
+		extra.image_xscale = 1 + (weapon_level * 0.2);
+		extra.image_yscale = 1 + (weapon_level * 0.2);
+		extra.direction = irandom(359);
+}
 	audio_play_sound(snd_gunshot, 0, false);
 }
 
@@ -64,24 +72,24 @@ if (leveling_up)
     fire_delay -= 1
 
     if (keyboard_check_pressed(ord("2")))
-    {
+{
         speed_level += 1
         move_speed += 0.1
-    }
+}
 
     if (keyboard_check_pressed(ord("3")))
-    {
+{
         hp_level += 1
         maxhp += 4
         hp = maxhp
-    }
+}
 
     if (keyboard_check_pressed(ord("1")) ||
         keyboard_check_pressed(ord("2")) ||
         keyboard_check_pressed(ord("3")))
-    {
+{
         leveling_up = false
-    }
+}
 
     exit;
 }
