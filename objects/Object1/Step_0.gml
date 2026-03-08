@@ -9,3 +9,19 @@ if mouse_check_button_pressed(mb_left)
 {
 	instance_create_layer(x, y, "Instances", Object5_1)
 }
+
+if (hp <= 0)
+{
+    room_goto(Room3);
+}
+
+if (fire_cooldown > 0)
+{
+    fire_cooldown -= 1;
+}
+
+if (keyboard_check(vk_space) && fire_cooldown <= 0)
+{
+    instance_create_layer(x, y, "Instances", Object5_1);
+    fire_cooldown = fire_delay;
+}

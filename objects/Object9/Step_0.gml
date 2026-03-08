@@ -4,3 +4,19 @@ if (instance_exists(Object1))
     x += lengthdir_x(move_speed, dir);
     y += lengthdir_y(move_speed, dir);
 }
+
+/// @description?
+
+if (place_meeting(x, y, Object1))
+{
+	if (!hitplayer)
+	{
+		
+		with(Object1)
+		{
+			hp -= other.damage;
+		}
+	}
+	hitplayer = true;
+} else hitplayer = false;
+
