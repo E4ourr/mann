@@ -13,9 +13,16 @@ if (instance_exists(player))
 
 var enemy = instance_create_layer(spawn_x, spawn_y, "Instances", Object8);
 
-enemy.hp *= (1 + difficulty_timer * 0.20);
-enemy.image_xscale *= (1 + difficulty_timer * 0.03);
-enemy.image_yscale *= (1 + difficulty_timer * 0.03);
+enemy.hp = 3 * (1 + difficulty_timer * 0.20);
+
+enemy.move_speed = 1 * speed_multiplier;
+
+enemy.damage = 1 * damage_multiplier;
+
+enemy.image_xscale = 1 + difficulty_timer * 0.03;
+
+enemy.image_yscale = 1 + difficulty_timer * 0.03;
+
 }  
 }
 }
