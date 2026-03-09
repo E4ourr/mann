@@ -2,6 +2,7 @@
   "FolderOrderSettings":[],
   "ResourceOrderSettings":[
     {"name":"Obj_dont_touch","order":9,"path":"objects/Obj_dont_touch/Obj_dont_touch.yy",},
+    {"name":"obj_pause_manager","order":35,"path":"objects/obj_pause_manager/obj_pause_manager.yy",},
     {"name":"Object1","order":8,"path":"objects/Object1/Object1.yy",},
     {"name":"Object10","order":12,"path":"objects/Object10/Object10.yy",},
     {"name":"Object11","order":15,"path":"objects/Object11/Object11.yy",},
