@@ -39,5 +39,8 @@
     "path":"sprites/Sprite2/Sprite2.yy",
   },
   "spriteMaskId":null,
+  "tags":[
+    "pauseable",
+  ],
   "visible":true,
 }

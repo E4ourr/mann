@@ -1,3 +1,8 @@
+if (global.paused) exit;
+
+if (instance_exists(Object1)) {
+    if (Object1.leveling_up) exit;
+}
 
 if (Object1.leveling_up) exit
 if (instance_exists(Object1))
