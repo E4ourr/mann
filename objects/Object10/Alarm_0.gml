@@ -13,7 +13,7 @@ if (instance_exists(player))
 
 var enemy = instance_create_layer(spawn_x, spawn_y, "Instances", Object8);
 
-enemy.hp = 3 * (1 + difficulty_timer * 0.20);
+enemy.hp = 5 * (1 + difficulty_timer * 0.20);
 
 enemy.move_speed = 1 * speed_multiplier;
 
