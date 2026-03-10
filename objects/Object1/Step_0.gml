@@ -10,9 +10,11 @@ if (xp >= xp_to_next)
 
 if (leveling_up)
 {
-    if (keyboard_check_pressed(ord("1"))) weapon_level += 1
+    if (keyboard_check_pressed(ord("1"))) 
+{
+	weapon_level += 1
 	 damage += 1
-
+}
     if (keyboard_check_pressed(ord("2")))
 {
         speed_level += 1
