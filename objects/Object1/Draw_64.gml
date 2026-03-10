@@ -32,3 +32,17 @@ if (leveling_up)
 
 var txt = "Knock Outs: " + string(_score);
 draw_text(display_get_gui_width() - _margin, _margin + 30, txt);
+
+draw_set_alpha(1);
+var bar_x = 20
+var bar_y = 40
+var bar_width = 200
+var bar_height = 10
+var margin = 20
+
+draw_set_color(c_gray)
+draw_rectangle(bar_x, bar_y, bar_x + bar_width, bar_y + bar_height, false)
+draw_set_color(c_blue)
+draw_rectangle(bar_x, bar_y, bar_x + (xp / xp_to_next) * bar_width, bar_y + bar_height, false)
+draw_set_color(c_white)
+draw_text(bar_x + bar_width/2, bar_y + bar_height + 5, "XP");

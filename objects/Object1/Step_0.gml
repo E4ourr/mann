@@ -4,7 +4,7 @@ if (xp >= xp_to_next)
 {
     xp = 0
     level += 1
-    xp_to_next += 5
+    xp_to_next *= 1.2
     leveling_up = true
 }
 
