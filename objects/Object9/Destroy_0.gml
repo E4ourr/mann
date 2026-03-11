@@ -1,1 +1,1 @@
-Object1.xp += 1
+Object1.xp += 1 + Object1.xp_level

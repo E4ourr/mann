@@ -13,7 +13,7 @@ turn = 0;
 
 fire_cooldown = 0;
 fire_delay = 15;
-
+xp_level = 0
 level = 1;
 xp = 0;
 xp_to_next = 5;

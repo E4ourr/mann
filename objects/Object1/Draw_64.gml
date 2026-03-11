@@ -20,14 +20,20 @@ var _margin = 10;
 draw_text(display_get_gui_width() - _margin, _margin, "Level: " + string(level));
 if (leveling_up)
 {
+	var cx = display_get_gui_width() / 2;
+	draw_set_alpha(0.8)
+    draw_set_color(c_black)
+    draw_rectangle(cx - 450, 170, cx + 450, 650, false)
+    draw_set_alpha(1)
+	
     var cx = display_get_gui_width()/2
-    draw_set_color(c_white);
+    draw_set_color(c_maroon);
     draw_set_halign(fa_center)
-
     draw_text(cx,200,"LEVEL UP")
-    draw_text(cx,250,"1 - Weapon (Lv " + string(weapon_level) + ")")
-    draw_text(cx,300,"2 - Speed (Lv " + string(speed_level) + ")")
-    draw_text(cx,350,"3 - HP (Lv " + string(hp_level) + ")")
+    draw_text(cx,300,"1 - Weapon (Lv " + string(weapon_level) + ")")
+    draw_text(cx,400,"2 - Speed (Lv " + string(speed_level) + ")")
+    draw_text(cx,500,"3 - HP (Lv " + string(hp_level) + ")")
+	draw_text(cx,600,"4 - XP Gain (Lv " + string(xp_level) + ")(MAX lvl=4)")
 }
 
 var txt = "Knock Outs: " + string(_score);

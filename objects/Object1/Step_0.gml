@@ -27,10 +27,15 @@ if (leveling_up)
         maxhp += 4
         hp = maxhp
 }
+if (keyboard_check_pressed(ord("4")) && xp_level < 4)
+{
+    xp_level += 1
+}
 
     if (keyboard_check_pressed(ord("1")) ||
         keyboard_check_pressed(ord("2")) ||
-        keyboard_check_pressed(ord("3")))
+		keyboard_check_pressed(ord("3")) ||
+        keyboard_check_pressed(ord("4")))
 {
         leveling_up = false
 }
