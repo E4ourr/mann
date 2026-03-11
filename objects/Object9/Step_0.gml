@@ -1,10 +1,6 @@
-if (global.paused) exit;
+if (global.paused) return;
 
-if (instance_exists(Object1)) {
-    if (Object1.leveling_up) exit;
-}
-
-if (Object1.leveling_up) exit
+if (instance_exists(Object1) && Object1.leveling_up) return;
 if (instance_exists(Object1))
 {
 var dir = point_direction(x, y, Object1.x, Object1.y);
