@@ -1,3 +1,18 @@
+
+var total_seconds = survival_time div room_speed;
+var minutes = total_seconds div 60;
+var seconds = total_seconds mod 60;
+var sec_text = string(seconds);
+if (seconds < 10)
+{
+    sec_text = "0" + string(seconds);
+}
+draw_set_font(Font1);
+draw_set_color(c_white);
+draw_set_halign(fa_center);
+draw_set_valign(fa_top);
+draw_text(display_get_gui_width() / 2, 20, string(minutes) + ":" + sec_text);
+
 var _heartstotal = maxhp / 4;
 var _currenthearts = floor(hp / 4);
 var _partialheart = hp - (_currenthearts * 4);

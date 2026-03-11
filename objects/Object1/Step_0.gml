@@ -1,5 +1,5 @@
 if (global.paused) exit;
-
+survival_time += 1;
 if (xp >= xp_to_next)
 {
     xp = 0
