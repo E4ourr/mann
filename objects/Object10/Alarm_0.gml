@@ -1,3 +1,4 @@
+if (global.paused) exit;
 var player = instance_find(Object1,0);
 
 if (instance_exists(player))
@@ -29,7 +30,7 @@ enemy.image_yscale = 1 + difficulty_timer * 0.03;
 
 difficulty_timer += 1;
 
-if (difficulty_timer mod 2 == 0)
+if (difficulty_timer mod 4 == 0)
 {
     spawn_amount += 3;
     damage_multiplier += 0.2;
